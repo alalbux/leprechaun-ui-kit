@@ -16,7 +16,7 @@ Once you've installed the package, you can import components from the library an
 
 
 ```jsx
-Copy code
+
 import React from 'react';
 import { Button } from 'leprechaun-ui-kit';
 
