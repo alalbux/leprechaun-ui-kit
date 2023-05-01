@@ -21,13 +21,13 @@ const TextareaInput = styled.textarea`
   min-height: 100px;
 `;
 
-const TextareaComponent = ({ label, value, onChange }) => {
+const Textarea = ({ label, value, onChange, id }) => {
   return (
     <TextareaWrapper>
-      <TextareaLabel>{label}</TextareaLabel>
-      <TextareaInput value={value} onChange={onChange} />
+      <TextareaLabel htmlFor={id}>{label}</TextareaLabel>
+      <TextareaInput id={id} value={value} onChange={onChange} />
     </TextareaWrapper>
   );
 };
 
-export default TextareaComponent;
+export default Textarea;

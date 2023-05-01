@@ -11,13 +11,14 @@ type SelectProps = {
   options: OptionType[];
   value: string;
   onChange: (event: ChangeEvent<HTMLSelectElement>) => void;
+  id: string;
 }
 
 const SelectWrapper = styled.div`
   position: relative;
 `;
 
-const Select = styled.select`
+const SelectComponent = styled.select`
   width: 100%;
   padding: 8px;
   border-radius: 4px;
@@ -41,20 +42,20 @@ const ArrowIcon = styled.span`
 
 const Option = styled.option``;
 
-const SelectComponent = ({ label, options, value, onChange }: SelectProps) => {
+const Select = ({ label, options, value, onChange, id }: SelectProps) => {
   return (
     <SelectWrapper>
-      <label>{label}</label>
-      <Select value={value} onChange={onChange}>
+      <label htmlFor={id}>{label}</label>
+      <SelectComponent id={id} value={value} onChange={onChange}>
         {options.map((option) => (
           <Option key={option.value} value={option.value}>
             {option.label}
           </Option>
         ))}
-      </Select>
+      </SelectComponent>
       <ArrowIcon />
     </SelectWrapper>
   );
 };
 
-export default SelectComponent;
+export default Select;
