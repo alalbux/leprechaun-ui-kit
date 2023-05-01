@@ -1,5 +1,10 @@
 # Leprechaun UI Kit
 
+
+
+<img width="957" alt="Captura de Tela 2023-05-01 às 06 29 28" src="https://user-images.githubusercontent.com/38147979/235435359-4ecf2c1b-7d69-4aeb-8319-066b2fdd9275.png">
+
+
 Leprechaun UI Kit is a library of basic React components built using EmotionJS for styling. 
 
 The kit provides a minimalist approach to building user interfaces while allowing for a high degree of customization. The components included in the kit have been designed to be flexible and easy to use, making it a great choice for developers looking to quickly build web applications.
